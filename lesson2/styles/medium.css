@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+ 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        font-family: 'Sofia Sans', 'sans-serif';
+
+    } 
+    
+    #content {
+        margin: 0 auto;
+        display: grid;
+        grid-template-areas: 
+                        's1 s2'
+                        's3 s3'
+       ;
+    }
+    header, footer {
+        background-color: rgb(226, 43, 43);
+        text-align: center;
+        padding: 1rem;
+    }
+
+    img {
+        width: 260px;
+        height: auto;
+    }
+
+    .visual-balance-div {
+        grid-area: s1;
+        margin: 1rem;
+        padding: 10px;
+        background-color: aquamarine;
+        text-align: center;
+    }
+
+    .rule-of-thirds-div {
+        grid-area: s2;
+        margin: 1rem;
+        padding: 10px;
+        background-color: brown;
+        text-align: center;
+    }
+
+    .contrast-div {
+        grid-area: s3;
+        margin: 1rem;
+        padding: 10px;
+        text-align: center;
+        background-color: bisque;
+    }
+}

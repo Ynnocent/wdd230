@@ -1,0 +1,9 @@
+@media screen and (min-width: 1025px) and (max-width: 2000px) {
+    body {
+        font-family: 'Sofia Sans', 'sans-serif';
+    } 
+    
+    header, footer {
+        background-color: rgb(234, 255, 114);
+    }
+}
