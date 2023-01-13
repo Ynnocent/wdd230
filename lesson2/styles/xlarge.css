@@ -10,34 +10,56 @@
                         's1 s2 s3';
     }
     header, footer {
-        background-color: rgb(255, 234, 114);
-
+        background-color: #0a2032;
+        color: white;
         text-align: center;
         padding: 1rem;
     }
     img {
         width: 260px;
         height: auto;
+        padding: 10px;
+    }
+
+    h3 {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        background-color: #3a4958;
+        color: white;
+        padding: 5px;
+        margin: 0;
+    }
+    
+    .website-brand-name {
+        text-align: center;
+    }
+
+    .content-paragraph {
+        text-align: justify;
+        padding: 10px;
     }
 
     .visual-balance-div {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
         margin: 1rem;
-        padding: 10px;
-        background-color: aquamarine;
+        background-color: #eeeeee;
         text-align: center;
     }
 
     .rule-of-thirds-div {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
         margin: 1rem;
-        padding: 10px;
-        background-color: brown;
+        background-color: #eeeeee;
         text-align: center;
     }
 
     .contrast-div {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
         margin: 1rem;
-        padding: 10px;
         text-align: center;
-        background-color: bisque;
+        background-color: #eeeeee;
     }
 }
