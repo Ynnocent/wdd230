@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap');
+
+@media screen  and (max-width: 480px) {
+    body {
+        font-family: "Sofia Sans", 'Times New Roman', Times, serif;
+    } 
+    img {
+        width: 90px;
+        height: auto;
+    }
+    header, footer, main {
+        max-width:480px;
+        padding: 1rem;
+        color: #DAD7CD;
+    }
+    header, footer {
+        background-color: #A3B18A;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #logoNameh1 {
+        padding: 1rem;
+        font-size: 20px;
+    }
+
+    nav ul {
+        list-style: none;
+    }
+    
+    #dateTimeDiv {
+        text-align: center;
+        background-color: rgb(85, 141, 122);
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    .herodiv {
+        height: 280px;
+        max-width: 480px;
+        background-color: #A3B18A;
+        padding: 10px;
+        margin: 1rem;
+    }
+    .eventDiv {
+        height: 280px;
+        max-width: 480px;
+        background-color: #A3B18A;
+        padding: 10px;
+        margin: 1rem;
+        
+    }
+    .weatherDiv {
+        height: 280px;
+        max-width: 480px;
+        background-color: #A3B18A;
+        padding: 10px;
+        margin: 1rem;
+    }
+    .newReleaseDiv {
+        height: 280px;
+        max-width: 480px;
+        background-color: #A3B18A;
+        padding: 10px;
+        margin: 1rem;
+    }
+    .spotlightDiv {
+        height: 280px;
+        max-width: 480px;
+        background-color: #A3B18A;
+        padding: 10px;
+        margin: 1rem;
+    }
+    .spotlight1div {
+        background-color: aquamarine;
+        padding: 1rem;
+    }
+    .spotlight2div {
+        background-color: rgb(85, 141, 122);
+        padding: 1rem;    
+    }
+
+    footer {
+        text-align: center;
+    }
+}
