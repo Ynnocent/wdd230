@@ -17,3 +17,13 @@ const dateoptionsHeader = options = {
 }
 
 document.querySelector("#dateTime").textContent = today.toLocaleDateString('en-US',dateoptionsHeader)
+
+// Toggle the menu open or closed
+function toggleMenu(){
+    document.querySelector("#navList").classList.toggle("menu-active");
+    document.querySelector("#hamburger-x").classList.toggle("menu-active");
+    document.querySelector("#hamburger-equiv").classList.toggle("menu-active");
+}
+
+// Attach click listener to the hamburger menu
+document.querySelector("#menu").addEventListener('click', toggleMenu);

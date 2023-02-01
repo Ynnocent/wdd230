@@ -25,7 +25,44 @@
     }
     nav ul {
         list-style: none;
+        display: none;
     }
+
+     /* Burger Menu */
+     #menu {
+        background-color: #A3B18A;
+        border: 0;    
+        margin: 0;
+    }
+     button img {
+        height: auto;
+        width: 60px;
+    }
+    #hamburger-x{
+        display: none;
+    }
+    
+    #hamburger-equiv{
+        display: inline;
+    }
+    
+    nav ul.menu-active{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #hamburger-x.menu-active{
+        display: inline;
+    }
+    
+    #hamburger-equiv.menu-active{
+        display: none;
+    }
+    ul img {
+        width: 60px;
+        height: auto;
+    }
+    /* Burger Menu */
 
     #dateTimeDiv {
         text-align: center;

@@ -22,6 +22,48 @@
         align-items: center;
         justify-content: space-between;
     }
+    nav ul {
+        display: none;
+    }
+
+    
+     /* Burger Menu */
+     #menu {
+        background-color: #A3B18A;
+        border: 0;    
+        margin: 0;
+    }
+     button img {
+        height: auto;
+        width: 30px;
+    }
+    #hamburger-x{
+        display: none;
+    }
+    
+    #hamburger-equiv{
+        display: inline;
+    }
+    
+    nav ul.menu-active{
+        display: flex;
+        flex-direction: column;
+        max-width: 480px;
+        padding: 0;
+    }
+    
+    #hamburger-x.menu-active{
+        display: inline;
+    }
+    
+    #hamburger-equiv.menu-active{
+        display: none;
+    }
+    ul img {
+        width: 30px;
+        height: auto;
+    }
+    /* Burger Menu */
 
     #logoNameh1 {
         padding: 1rem;
