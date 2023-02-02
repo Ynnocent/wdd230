@@ -17,11 +17,22 @@
         background-color: #A3B18A;
     }
 
+    .socialmedialogo img {
+        height: auto;
+        width: 30px;
+    }
+
+    #headerDiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     nav {
         display: flex;
         align-items: center;
-        justify-content: space-between;
     }
+
     nav ul {
         display: none;
     }
@@ -42,18 +53,21 @@
     }
     
     #hamburger-equiv{
-        display: inline;
+        display: flex;
     }
     
     nav ul.menu-active{
         display: flex;
         flex-direction: column;
         max-width: 480px;
-        padding: 0;
+        padding: 10px;
+    }
+     nav ul li {
+        padding: 10px;
     }
     
     #hamburger-x.menu-active{
-        display: inline;
+        display: flex;
     }
     
     #hamburger-equiv.menu-active{
@@ -103,6 +117,15 @@
         padding: 10px;
         margin: 1rem;
     }
+
+    .joinDiv {
+        height: 280px;
+        max-width: 480px;
+        background-color: #A3B18A;
+        padding: 10px;
+        margin: 1rem;
+    }
+
     .newReleaseDiv {
         height: 280px;
         max-width: 480px;

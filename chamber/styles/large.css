@@ -18,14 +18,35 @@
         background-color: #A3B18A;
     }
 
-    nav {
+    .socialmedialogo img {
+        height: auto;
+        width: 60px;
+    }
+
+    #headerDiv {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+
+    nav {
+        display: block;
+    }
     nav ul {
         list-style: none;
-        display: none;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    nav ul li {
+        justify-content: center;
+        font-size: 25px;
+        padding: 10px;
     }
 
     /* Burger Menu */
@@ -33,6 +54,7 @@
         background-color: #A3B18A;
         border: 0;    
         margin: 0;
+        display: none;
     }
     button img {
         height: auto;
@@ -46,20 +68,12 @@
         display: inline;
     }
     
-    nav ul.menu-active{
-        display: flex;
-    }
-    
     #hamburger-x.menu-active{
         display: inline;
     }
     
     #hamburger-equiv.menu-active{
         display: none;
-    }
-    ul img {
-        width: 60px;
-        height: auto;
     }
     /* Burger Menu */
 
@@ -76,7 +90,7 @@
         grid-template-areas: 
                 "event hero hero spotlight"
                 "weather hero hero spotlight"
-                "blank release release spotlight";
+                "join release release spotlight";
     }
     .herodiv {
         height: 815px;
@@ -103,6 +117,17 @@
         margin: 1rem;
         grid-area: weather;
     }
+
+    .joinDiv {
+        height: 380px;
+        max-width: 540px;
+        background-color: #A3B18A;
+        padding: 10px;
+        margin: 1rem;
+        grid-area: join;
+    }
+
+
     .newReleaseDiv {
         height: 280px;
         max-width: 1520px;
