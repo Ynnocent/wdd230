@@ -12,15 +12,19 @@
     <link rel="stylesheet" href="./styles/medium.css">  
     <link rel="stylesheet" href="./styles/large.css">
     <script src="./scripts/app.js" defer></script>
+    <script src="./scripts/main.js" defer></script>
     <title>The Shire Chamber of Commerce</title>
 </head>
 
 <body>
     <header>
+        <div id="meetandgreet">
+            🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m
+        </div>
         
         <div id="headerDiv">
             <div class="headerLogoDiv">
-                <img src="./images/Shire Chamber of Commerce-logos.jpeg" alt="Shire Chamber Logo">
+                <img src="./images/shirelogo.jpeg" alt="Shire Chamber Logo">
             </div>
             <div class="headerTitle"><h1 id="logoNameh1">The Shire Chamber of Commerce</h1></div>
             <div class="socialmedialogo">
@@ -33,15 +37,16 @@
         <nav>
             
             <button id="menu">
-                <span id="hamburger-x"><img src="./images/menu-close.png"></span>
-                <span id="hamburger-equiv"><img src="./images/menu-icon.png"></span>
+                <span id="hamburger-x"><img src="./images/menu-close.png" alt="menu close"></span>
+                <span id="hamburger-equiv"><img src="./images/menu-icon.png" alt="menu icon"></span>
               </button>
 
             <ul id="navList">
-                <li><a class="active">Discover</a></li>
-                <li><a>Directory</a></li>
-                <li><a>Join</a></li>
-                <li><a>Contact</a></li>        
+                <li><a href="./index.html" class="navactive" >Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>        
             </ul>
         </nav>
         
@@ -51,31 +56,52 @@
 
     <main>
         <div class="herodiv">
-            <h1>Hero and Action</h1>
+            <img src="./images/shireheroimg.jpg" class="herodivimg" alt="Hero Img">
+            <h1>Welcome to the Shire</h1>
+            <h2><a href="#">Join Us</a></h2>
         </div>
 
         <div class="eventDiv">
-            <h1>Event</h1>
+            <h1>Meet and Greet</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ab natus nesciunt mollitia quo maiores maxime itaque modi consequatur asperiores.</p>
         </div>
 
         <div class="weatherDiv">
             <h1>Weather</h1>
+            <div class="weathertemp">
+                <img src="./images/w.png" alt="Weather Icon">
+                <h1>33&#8451;</h1>
+            </div>
+            <h2>Partly Cloudy</h2>
+            <hr>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, rerum aliquam perferendis ratione amet dolorum sit blanditiis rem? Assumenda inventore sit beatae modi facere quod, doloribus itaque nobis exercitationem error.</p>
         </div>
 
         <div class="joinDiv">
-            <h1>Join</h1>
+            <h1><a href="#">Join</a></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem facere nostrum voluptate reprehenderit ipsa vitae deleniti esse aperiam reiciendis delectus iure nihil, perspiciatis unde minima ut obcaecati at cumque veniam placeat inventore consequuntur veritatis id perferendis? Doloremque nam cumque eius provident, rerum, dicta modi sit nostrum vel veniam ipsum alias.</p>
         </div>
         
         <div class="newReleaseDiv">
             <h1>New releases</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero inventore maiores beatae sequi quasi, eveniet, illum omnis veniam ut iusto asperiores cupiditate voluptas a nemo, quos sed laudantium perspiciatis tempore perferendis. Vel, repudiandae odit ab aspernatur, eaque obcaecati voluptas fugiat sit impedit harum sapiente quas distinctio fugit corporis corrupti quasi.</p>
         </div>
 
         <div class="spotlightDiv">
             <div class="spotlight1div">
-                <h1>Spotlight 1</h1>
+                <h1>Second Breakfast</h1>
+                <img src="./images/breakfast.png" alt="Second Breakfast">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam unde neque deserunt assumenda mollitia, fugit dicta ducimus quia? Dignissimos minus neque officiis minima sapiente cum, ratione omnis hic laborum perferendis.</p>
             </div>
             <div class="spotlight2div">
-                <h1>Spotlight 2</h1>
+                <h1>Baggins University</h1>
+                <img src="./images/bilbobaggins.png" alt="Baggins Uni">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, suscipit odio. Dolorum, nesciunt. Amet quis excepturi facere laborum incidunt quia voluptatem, voluptates, optio aperiam consectetur temporibus eum nesciunt. Quod, non!</p>
+            </div>
+            <div class="spotlight3div">
+                <h1>Fellowship of the Ring Holiday Event</h1>
+                <img src="./images/ring.png" alt="Ring">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae ipsa, quis, aut tempore cum hic soluta itaque, excepturi ea dolorum pariatur assumenda provident in praesentium eius necessitatibus! Harum, rem optio.</p>
             </div>
         </div>
     </main>
@@ -83,14 +109,14 @@
     <footer>
         
         <div class="footerDiv">
-            <img src="./images/Shire Chamber of Commerce-logos.jpeg" alt="Shire Chamber Logo Footer">
+            <img src="./images/shirelogo.jpeg" alt="Shire Chamber Logo Footer">
             <div class="titleAddressDiv">
                 <h2>The Shire Chamber of Commerce</h2>
-                <p id="addressFooter">Address of the Shire COC</p>    
+                <p id="addressFooter">999 South Center 3rd St., Hobbiton, Shire, Middle-Earth</p>    
             </div>
             <div class="contactLocDiv">
-                <p id="contactNumber">Contact Number</p>
-                <p id="locationMap">Location Map</p>
+                <p id="contactNumber">+1(999) 999-999 </p>
+                <img id="locationMap" src="./images/location.png" alt="location icon">
             </div>
         </div>
         
