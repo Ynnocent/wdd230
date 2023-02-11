@@ -4,11 +4,11 @@
     body {
         font-family: "Sofia Sans";
     }
-
+/* 
     img {
         width: 130px;
         height: auto;
-    }
+    } */
     header, footer, main {
         max-width:3000px;
         padding: 1rem;
@@ -242,6 +242,7 @@
         justify-content: space-evenly;
         grid-area: spotlight;
     }
+
     .spotlight1div {
         background-color: rgb(85, 141, 122);
         padding: 1rem;

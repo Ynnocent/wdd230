@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/large.css">
     <script src="./scripts/app.js" defer></script>
     <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/windtemp.js" defer></script>
     <title>The Shire Chamber of Commerce</title>
 </head>
 
@@ -24,7 +25,7 @@
         
         <div id="headerDiv">
             <div class="headerLogoDiv">
-                <img src="./images/shirelogo.jpeg" alt="Shire Chamber Logo">
+                <img src="./images/webp/shirelogo.webp" alt="Shire Chamber Logo">
             </div>
             <div class="headerTitle"><h1 id="logoNameh1">The Shire Chamber of Commerce</h1></div>
             <div class="socialmedialogo">
@@ -56,7 +57,10 @@
 
     <main>
         <div class="herodiv">
-            <img src="./images/shireheroimg.jpg" class="herodivimg" alt="Hero Img">
+            <picture class="heroPic">
+                <source srcset="./images/optimizedImg/wdd230-org.jpg">
+                <img src="./images/optimizedImg/wdd230-org.jpg" class="herodivimg" alt="Hero Img">    
+            </picture>
             <h1>Welcome to the Shire</h1>
             <h2><a href="#">Join Us</a></h2>
         </div>
@@ -70,11 +74,12 @@
             <h1>Weather</h1>
             <div class="weathertemp">
                 <img src="./images/w.png" alt="Weather Icon">
-                <h1>33&#8451;</h1>
+                <h1> <span id="tempertatureSpan"></span> </h1>
             </div>
             <h2>Partly Cloudy</h2>
             <hr>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, rerum aliquam perferendis ratione amet dolorum sit blanditiis rem? Assumenda inventore sit beatae modi facere quod, doloribus itaque nobis exercitationem error.</p>
+            <p>Wind Chill: <span id="windchillSpan"></span></p>
+            <p>Wind Speed: <span id="windspeedSpan"></span></p>
         </div>
 
         <div class="joinDiv">
@@ -90,17 +95,17 @@
         <div class="spotlightDiv">
             <div class="spotlight1div">
                 <h1>Second Breakfast</h1>
-                <img src="./images/breakfast.png" alt="Second Breakfast">
+                <img src="./images/optimizedImg/breakfast.png" alt="Second Breakfast">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam unde neque deserunt assumenda mollitia, fugit dicta ducimus quia? Dignissimos minus neque officiis minima sapiente cum, ratione omnis hic laborum perferendis.</p>
             </div>
             <div class="spotlight2div">
                 <h1>Baggins University</h1>
-                <img src="./images/bilbobaggins.png" alt="Baggins Uni">
+                <img src="./images/optimizedImg/bilbobaggins.png" alt="Baggins Uni">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, suscipit odio. Dolorum, nesciunt. Amet quis excepturi facere laborum incidunt quia voluptatem, voluptates, optio aperiam consectetur temporibus eum nesciunt. Quod, non!</p>
             </div>
             <div class="spotlight3div">
                 <h1>Fellowship of the Ring Holiday Event</h1>
-                <img src="./images/ring.png" alt="Ring">
+                <img src="./images/optimizedImg/ring.png" alt="Ring">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae ipsa, quis, aut tempore cum hic soluta itaque, excepturi ea dolorum pariatur assumenda provident in praesentium eius necessitatibus! Harum, rem optio.</p>
             </div>
         </div>
@@ -109,7 +114,7 @@
     <footer>
         
         <div class="footerDiv">
-            <img src="./images/shirelogo.jpeg" alt="Shire Chamber Logo Footer">
+            <img src="./images/webp/shirelogo.webp" alt="Shire Chamber Logo Footer">
             <div class="titleAddressDiv">
                 <h2>The Shire Chamber of Commerce</h2>
                 <p id="addressFooter">999 South Center 3rd St., Hobbiton, Shire, Middle-Earth</p>    
