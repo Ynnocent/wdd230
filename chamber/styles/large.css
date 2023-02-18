@@ -4,11 +4,7 @@
     body {
         font-family: "Sofia Sans";
     }
-/* 
-    img {
-        width: 130px;
-        height: auto;
-    } */
+
     header, footer, main {
         max-width:3000px;
         padding: 1rem;
@@ -259,6 +255,9 @@
         padding: 1rem;
         min-width: 420px;   
     }
+
+    /* Discover Page */
+    
 
     .footerDiv {
         display: flex;
