@@ -1,0 +1,38 @@
+:root {
+    --primary-color-100: #6ecefa;
+    --primary-color-200: #5d70a8;
+    --primary-color-300: #4c2a58;
+    color: white;
+}
+
+table{
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+thead tr{
+    background-color: var(--primary-color-200);
+}
+thead tr:nth-child(2) th:nth-child(1){
+    background-color: var(--primary-color-200);
+    border-top: 1px var(--primary-color-200) solid;
+}
+thead tr:nth-child(2) th{
+    background-color: var(--primary-color-100);
+}
+tr{
+    /* border: 1px black solid; */
+    background-color: var(--primary-color-100);
+    
+}
+tbody tr:nth-child(even){
+    background-color: var(--primary-color-300);
+}
+td, th{
+    border: 1px grey solid;
+    padding: 1rem;
+    text-align: center;
+}
+caption{            
+    padding: 1rem;
+    caption-side: bottom;
+}
