@@ -8,7 +8,7 @@
     header, footer, main {
         max-width:480px;
         padding: 1rem;
-        color: #DAD7CD;
+        color: white;
     }
     header, footer {
         background-color: #A3B18A;
@@ -46,7 +46,7 @@
     }
 
     nav ul li:hover {
-        background-color: azure;
+        background-color: white;
         border-radius: 1rem;
     }
     

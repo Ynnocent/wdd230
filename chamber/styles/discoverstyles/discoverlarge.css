@@ -186,4 +186,9 @@
     .footerpardiv {
         text-align: center;
     }
+
+    .last_visit {
+        background-color: #344E41;
+        padding: 1rem;
+    }
 }
