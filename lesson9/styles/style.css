@@ -1,0 +1,12 @@
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: grey;
+    color: white;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
