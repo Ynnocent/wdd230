@@ -1,0 +1,76 @@
+[
+    {
+        "id":1,
+        "name":"Baggins University",
+        "address": "666 South 222 East",
+        "number": "202-918-2132",
+        "url": "https://baggins.edu",
+        "membership":"gold"
+    },
+
+    {
+        "id":2,
+        "name":"Third Breakfast",
+        "address":"999 West 232 North",
+        "number":"505-982-9832",
+        "url":"https://thirdbreakfast.com",
+        "membership":"bronze"
+
+    },
+    {
+        "id":3,
+        "name":"Hobbiton Inc.",
+        "address":"123 West 42 South",
+        "number":"505-356-8326",
+        "url":"https://hobbiton.org",
+        "membership":"silver"
+    },
+    {
+        "id":4,
+        "name":"Bigfoot Bakery",
+        "address":"600 South 200 East",
+        "number": "201-559-1184",
+        "url":"https://bigbakery.com",
+        "membership":"silver"
+    },
+    {
+        "id":5,
+        "name":"Foolery Tech",
+        "address":"125 West 62 South",
+        "number": "248-381-5068",
+        "url":"https://foolery.io",
+        "membership":"gold"
+    },
+    {
+        "id":6,
+        "name":"Bag End Brewery",
+        "address":"123 South 1 North",
+        "number":"412-662-3899",
+        "url":"https://bebrewery.com",
+        "membership":"silver"
+    },
+    {
+        "id":7,
+        "name":"Hobbiton Harvesters",
+        "address":"123 East 3 North",
+        "number": "229-289-7418",
+        "url":"https://hobbitonharvesters.org",
+        "membership":"bronze"
+    },
+    {
+        "id":8,
+        "name":"Fellowship Foods",
+        "address":"123 East 43 West",
+        "number":"240-492-4388",
+        "url":"https://fellowshipfoods.com",
+        "membership":"silver"
+    },
+    {
+        "id":9,
+        "name":"Mithril Mines Inc",
+        "address":"200 West 50 East",
+        "number":"313-556-8137",
+        "url":"https://mithrilmines.org",
+        "membership":"gold"
+    }
+]

@@ -111,7 +111,7 @@
     main {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        /* grid-template-rows: 1fr 1fr 1fr 1fr; */
         grid-template-areas: 
             "div1 div1"
             "div3 div3"
@@ -306,6 +306,58 @@
         background-color: #A3B18A;
     }
 
+    .card-list-div {
+        grid-column: 1/5;
+        padding: 1rem;
+    }
+
+    /* Directory Page */
+    
+    #directory-container {
+        background-color: #A3B18A;
+        display: flex;
+        grid-column: 1/5;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    #directory-container.in-list-mode {
+        display: table;
+    }
+
+    #directory-container.in-list-mode ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #directory-container.in-list-mode img {
+        display: none;
+    }
+    .business-card {
+        list-style: none;
+        background-color: rgb(85, 141, 122);
+        margin: 1rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        text-align:center;
+        justify-content: center;
+
+    }
+    .business-card img {
+        width: 90px;
+        height: auto;
+        padding: .5rem;
+        text-align: center;
+        margin: auto;
+    }
+    .business-card li {
+        padding: 0.5rem;
+        font-size: 20px;
+    }
+    #goldmembership {
+        border: 5px solid gold;
+        border-radius: .5rem;
+    }
     .footerDiv {
         display: flex;
         justify-content: space-between;

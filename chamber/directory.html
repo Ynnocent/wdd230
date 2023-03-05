@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./styles/large.css">
     <script src="./scripts/app.js" defer></script>
     <script src="./scripts/main.js" defer></script>
-    <script src="./scripts/windtemp.js" defer></script>
+    <script src="./scripts/jsondata.js" defer></script>
     <title>The Shire Chamber of Commerce</title>
 </head>
 
@@ -43,9 +43,9 @@
               </button>
 
             <ul id="navList">
-                <li><a href="./index.html" class="navactive" >Home</a></li>
+                <li><a href="./index.html"  >Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="./directory.html">Directory</a></li>
+                <li><a href="./directory.html" class="navactive">Directory</a></li>
                 <li><a href="./join.html">Join</a></li>
                 <li><a href="#">Contact</a></li>        
             </ul>
@@ -56,10 +56,12 @@
     </header>
 
     <main>
-        <section id="thank-you-section">
-            <h1>Thank you!</h1>
-        </section>
-        
+        <div class="card-list-div">
+            <button id="toggle-view" class="card-view">CARD</button>
+        </div>
+        <div id="directory-container">
+            
+        </div>
     </main>
 
     <footer>
