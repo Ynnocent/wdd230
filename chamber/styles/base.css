@@ -291,6 +291,24 @@
     
     /* Directory Page */
     
+    #toggle-view {
+        text-align: center;
+        background-color: rgb(85, 141, 122);
+        color: white;
+        width: 5rem;
+        height: 2.5rem;
+        border-radius: .5rem;
+        border: none;
+    }
+    #toggle-view.list-view {
+        background-color: #A3B18A;
+    }
+
+    .card-list-div {
+        text-align: center;
+        padding: 1rem;
+    }
+
     #directory-container {
         background-color: #A3B18A;
         display: flex;
