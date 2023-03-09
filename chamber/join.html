@@ -61,15 +61,20 @@
         <div class="join-form">
             <form method="get" action="./thankyou.html" id="form-area">
                 <label for="firstname"> First Name </label>
-                <input type="text" name="firstName" required>
+                <input type="text" name="firstName" id="firstname" required>
+
                 <label for="lastName">Last Name </label>
-                <input type="text" required name="lastName">
+                <input type="text" required name="lastName" id="lastName">
+
                 <label for="position">Position </label>
-                <input type="text" required name="business" minlength="7">
+                <input type="text" required name="business" minlength="7" id="position">
+
                 <label for="email">Email </label>
-                <input type="email" required name="email">
+                <input type="email" required name="email" id="email">
+
                 <label for="cell-number"> Phone Number </label>
-                <input type="tel" required name="cell-number">
+                <input type="tel" required name="cell-number" id="cell-number">
+
                 <div id="radio-div">
                     <label for="np-membership">NP Membership</label>
                     <input type="radio" id="np-membership" name="membership">

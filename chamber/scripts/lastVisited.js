@@ -1,7 +1,6 @@
 localStorage.setItem('lastVisit', new Date());
 let lastVisited = localStorage.getItem('lastVisit');
 
-
 if (lastVisited) {
     let currentTime = new Date().getTime();
     let lastVisitTime = new Date(lastVisited).getTime();

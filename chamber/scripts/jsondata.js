@@ -29,7 +29,7 @@ function destructureObjects({name, address, number, url, membership}) {
      <li>${name}</li>
      <li>${number}</li>
      <li>${address}</li>
-     <li>${url}</li>
+     <li><a href=${url}>${url}</a></li>
      `;
     if (membership == "gold") {
         newUlObjects.setAttribute("id","goldmembership")
