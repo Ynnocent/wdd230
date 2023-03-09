@@ -144,6 +144,10 @@
         
     }
 
+    .shire_board_div img:hover {
+        transform: scale(1.1);
+        transition: 1s;
+    }
 
     .shire_entry_div {
         grid-area: hero;
@@ -152,6 +156,12 @@
         text-align: center;
         background-color: #344E41;
     }
+
+    .shire_entry_div img:hover {
+        transform: scale(1.1);
+        transition: 1s;
+    }
+
     .shire_restaurant_div {
         grid-area: restaurant;
         grid-column: 2;
@@ -160,17 +170,34 @@
         text-align: center;
         background-color: #344E41;
     }
+
+    .shire_restaurant_div img:hover {
+        transform: scale(1.1);
+        transition: 1s;
+    }
+
     .shire_store_div {
         padding: 1rem;
         margin: 10px;
         text-align: center;
         background-color: #344E41;
     }
+
+    .shire_store_div img:hover {
+        transform: scale(1.1);
+        transition: 1s;
+    }
+
     .shire_tent_div {
         padding: 1rem;
         margin: 10px;
         text-align: center;
         background-color: #344E41;
+    }
+
+    .shire_tent_div img:hover {
+        transform: scale(1.1);
+        transition: 1s;
     }
 
     .footerDiv {

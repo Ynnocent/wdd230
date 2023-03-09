@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="./styles/large.css">
     <script src="./scripts/app.js" defer></script>
     <script src="./scripts/main.js" defer></script>
-    <script src="./scripts/windtemp.js" defer></script>
+    <script src="./scripts/weatherAPI.js" defer></script>
     <title>The Shire Chamber of Commerce</title>
 </head>
 
@@ -58,8 +58,8 @@
     <main>
         <div class="herodiv">
             <picture class="heroPic">
-                <source srcset="./images/optimizedImg/wdd230-org.jpg">
-                <img src="./images/optimizedImg/wdd230-org.jpg" class="herodivimg" alt="Hero Img">    
+                <source srcset="./images/optimizedImg/desktopimgsize/shire_entry_large.jpg">
+                <img src="./images/optimizedImg/desktopimgsize/shire_entry_large.jpg" class="herodivimg" alt="Hero Img">    
             </picture>
             <h1>Welcome to the Shire</h1>
             <h2><a href="./join.html">Join Us</a></h2>
@@ -73,10 +73,10 @@
         <div class="weatherDiv">
             <h1>Weather</h1>
             <div class="weathertemp">
-                <img src="./images/w.png" alt="Weather Icon">
-                <h1> <span id="tempertatureSpan"></span> </h1>
+                <img alt="Weather Icon" id="weather-icon">
+                <h1> <span id="temperatureSpan"></span> </h1>
             </div>
-            <h2>Partly Cloudy</h2>
+            <h2><span id="weatherDesc"></span></h2>
             <hr>
             <p>Wind Chill: <span id="windchillSpan"></span></p>
             <p>Wind Speed: <span id="windspeedSpan"></span></p>
