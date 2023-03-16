@@ -455,7 +455,15 @@
     #radio-div {
         padding: 1rem;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #radio-div > * {
+        padding: 16px;
+    }
+
+    #radio-div  input {
+        margin-right: 16px;
     }
 
     #form-textarea {
