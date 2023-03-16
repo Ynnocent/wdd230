@@ -11,7 +11,7 @@
         color: white;
     }
     header, footer {
-        background-color: #A3B18A;
+        background-color: #3A472E;
     }
 
     .socialmedialogo img {
@@ -37,7 +37,7 @@
 
      /* Burger Menu */
      #menu {
-        background-color: #A3B18A;
+        background-color: #3A472E;
         border: 0;    
         margin: 0;
     }
@@ -71,12 +71,25 @@
     nav ul li a.navactive {
         background-color: azure;
         border-radius: 1rem;
-        padding: 1rem;
+        padding: .5rem;
+        color: black;
+        
     }
-    
-    nav ul li:hover {
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: .5rem;
+    }
+    nav ul li a:hover {
+        color: black;
         background-color: azure;
-            
+        border-radius: 1rem;
+        padding: .5rem;
+    }
+
+    #meetandgreet {
+        display: none;
     }
 
     #meetandgreet.active {
@@ -103,7 +116,7 @@
 
     #dateTimeDiv {
         text-align: center;
-        background-color: rgb(85, 141, 122);
+        background-color: rgb(37, 37, 37);
         padding: 5px;
         margin-top: 5px;
     }
@@ -125,7 +138,7 @@
         position: relative;
         min-height: 280px;
         max-width: 820px;
-        background-color: #A3B18A;
+        background-color: #3A472E;
         padding: 10px;
         margin: 1rem;
         grid-area: div1;
@@ -140,7 +153,7 @@
         position: absolute;
         top: 0;
         right: 250px;
-        background-color: #A3B18A;
+        background-color: #3A472E;
         padding: 1rem;
         border-radius: 1rem;
     }
@@ -149,21 +162,21 @@
         position: absolute;
         bottom: 10px;
         right: 50px;
-        background-color: #A3B18A;
+        background-color: #3A472E;
         padding: 1rem;
         border-radius: 1rem;
     }
 
     .herodiv h2 a {
         text-decoration: none;
-        color: #344E41;
+        color: white;
     }
 
     .eventDiv {
         text-align: center;
         min-height: 280px;
         max-width: 340px;
-        background-color: #A3B18A;
+        background-color: #3A472E;
         padding: 10px;
         margin: 1rem;
         grid-area: div6;
@@ -174,7 +187,7 @@
         display: block;
         min-height: 280px;
         min-width: 420px;
-        background-color: #A3B18A;
+        background-color: #3A472E;
         padding: 10px;
         margin: 1rem;
         grid-area: div5;
@@ -195,7 +208,7 @@
         text-align: center;
         min-height: 280px;
         max-width: 820px;
-        background-color: #A3B18A;
+        background-color: #3A472E;
         padding: 10px;
         margin: 1rem;
         grid-area: divjoin;
@@ -216,11 +229,12 @@
         text-align: center;
         min-height: 280px;
         max-width: 820px;
-        background-color: #A3B18A;
+        background-color: #3A472E;
         padding: 10px;
         margin: 1rem;
         grid-area: div4;
     }
+
     .spotlightDiv {
         text-align: center;
         display: flex;
@@ -233,21 +247,22 @@
         justify-content: space-evenly;
         grid-area: div3;
     }
-    .spotlight1div {
-        background-color: rgb(85, 141, 122);
-        margin: .5rem;
+
+    .spotlightItem {
+        background-color: #3A472E;
+        margin: 0.5rem;
         padding: 1rem;
-        width: 420px;
     }
-    .spotlight2div {
-        background-color: rgb(85, 141, 122);
-        margin: .5rem;
-        padding: 1rem;
-        width: 420px;   
+
+    .spotlightItem img {
+        width: 90px;
+        height: auto;
     }
-    .spotlight3div {
+
+    .spotlightDiv .spotlightItem:nth-last-child(2){
         display: none;
     }
+
 
     /* Join Area */
     .membership-options {
@@ -311,11 +326,147 @@
         padding: 1rem;
     }
 
+    /* Discover Page */
+    .discover_section {
+        width: 750px;
+    }
+    picture img[data-src]{
+        filter: blur(0.3em);
+        width: 300px;
+        height: 400px;
+    }
+
+    .shire_board_div {
+        grid-row: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        margin: 10px;
+        text-align: center;
+        background-color: #344E41;
+        max-width: 750px;
+        
+    }
+
+
+    .shire_entry_div {
+        justify-self: right;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        margin: 10px;
+        text-align: center;
+        background-color: #344E41;
+        max-width: 750px;
+    }
+
+    .shire_restaurant_div {
+        grid-row: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin: 10px;
+        text-align: center;
+        max-width: 750px;
+        background-color: #344E41;
+    }
+
+    .shire_store_div {
+        grid-row: 4;
+        justify-self: right;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        margin: 10px;
+        text-align: center;
+        max-width: 750px;
+        background-color: #344E41;
+    }
+
+    .shire_tent_div {
+        grid-row: 5;
+        justify-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        text-align: center;
+        background-color: #344E41;
+        max-width: 750px;
+    }
+
+    /* Join Area */
+    .join-section {
+        max-width: 750px;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        text-align: center;
+        align-items: center;
+    }
+    .membership-options {
+        
+        background-color: #3A472E;
+        padding: 1rem;
+        grid-column: 3/4;
+        width: 650px;
+
+    }
+    .membership-options h2,p {
+        text-align: left;
+    }
+    .join-form {
+        display: flex;
+        grid-column: 0/2;
+    }
+
+    #form-area {
+        background-color: #3A472E;
+        max-width: 580px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    #form-area > * {
+        padding: 1rem;
+    }
+
+    #radio-div {
+        padding: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #form-textarea {
+        resize: none;
+        box-sizing: border-box;
+        width: 500px;
+        height: 150px;
+        margin: 5px;
+    }
+
+    #thank-you-section {
+        grid-column: 2/4;
+        background-color: #3A472E;
+    }
+
     /* Directory Page */
     
     #toggle-view {
         text-align: center;
-        background-color: rgb(85, 141, 122);
+        background-color: #3A472E;
         color: white;
         width: 5rem;
         height: 2.5rem;
@@ -323,7 +474,7 @@
         border: none;
     }
     #toggle-view.list-view {
-        background-color: #A3B18A;
+        background-color: #3A472E;
     }
 
     .card-list-div {
@@ -353,7 +504,7 @@
     }
     .business-card {
         list-style: none;
-        background-color: rgb(85, 141, 122);
+        background-color: #3A472E;
         margin: 1rem;
         padding: 1rem;
         display: flex;

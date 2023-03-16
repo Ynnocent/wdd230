@@ -82,6 +82,10 @@
         background-color: azure;
     }
     
+    #meetandgreet {
+        display: none;
+    }
+    
     #meetandgreet.active {
         background-color: grey;
         text-align: center;
@@ -118,10 +122,6 @@
         background-color: rgb(85, 141, 122);
         padding: 5px;
         margin-top: 5px;
-    }
-
-    main {
-        
     }
 
     picture img{         

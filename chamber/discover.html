@@ -1,36 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Discover page demonstration for SCOC - WDD230 Ynno Plucena"
-    />
-    <title>Discover</title>
-  </head>
-  <body></body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
     <!-- Add Meta Tags -->
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta
       name="description"
       content="Chamber of Commerce website demonstration for WDD - 230 BYU-Idaho"
-    />
-    <link rel="icon" href="./favicon.ico" />
+    >
+    <link rel="icon" href="./favicon.ico">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    />
-    <link rel="stylesheet" href="./styles/discoverstyles/discoverbase.css" />
-    <link rel="stylesheet" href="./styles/discoverstyles/discovermedium.css" />
-    <link rel="stylesheet" href="./styles/discoverstyles/discoverlarge.css" />
+    >
+    <link rel="stylesheet" href="./styles/base.css" >
+    <link rel="stylesheet" href="./styles/medium.css" >
+    <link rel="stylesheet" href="./styles/large.css" >
     <script src="./scripts/app.js" defer></script>
     <script src="./scripts/main.js" defer></script>
     <script src="./scripts/lazyloading.js" defer></script>
@@ -46,14 +32,14 @@
 
       <div id="headerDiv">
         <div class="headerLogoDiv">
-          <img src="./images/webp/shirelogo.webp" alt="Shire Chamber Logo" />
+          <img src="./images/webp/shirelogo.webp" alt="Shire Chamber Logo">
         </div>
         <div class="headerTitle">
           <h1 id="logoNameh1">The Shire Chamber of Commerce</h1>
         </div>
         <div class="socialmedialogo">
-          <a><img src="./images/facebook-logo.png" alt="Facebook Logo" /></a>
-          <a><img src="./images/linkedin.png" alt="LinkedIn Logo" /></a>
+          <a href="https://www.facebook.com/"><img src="./images/facebook-logo.png" alt="Facebook Logo"></a>
+          <a href="https://www.linkedin.com/in/ynno-plucena-aa58aa210/"><img src="./images/linkedin.png" alt="LinkedIn Logo"></a>
         </div>
       </div>
 
@@ -61,10 +47,10 @@
         <button id="menu">
           <span id="hamburger-x"
             ><img src="./images/menu-close.png" alt="menu close"
-          /></span>
+          ></span>
           <span id="hamburger-equiv"
             ><img src="./images/menu-icon.png" alt="menu icon"
-          /></span>
+          ></span>
         </button>
 
         <ul id="navList">
@@ -81,16 +67,6 @@
 
     <main>
       <section class="discover_section">
-        <div class="demographics">
-          <h2>Population</h2>
-          <ul>
-            <li>Total population: 500,000</li>
-            <li>Male: 48%, Female: 52%</li>
-            <li>Median age: 35 years</li>
-            <li>Children under 18: 25%</li>
-            <li>Seniors over 65: 10%</li>
-          </ul>
-        </div>
         <div class="shire_board_div">
           <picture class="shire_board_picture">
             <source
@@ -98,25 +74,27 @@
               srcset="
                 ./images/optimizedImg/desktopimgsize/shire_board_large.jpg
               "
-            />
+            >
             <!-- Large -->
             <source
               media="(min-width: 400px)"
               srcset="
                 ./images/optimizedImg/tabletimgsize/shire_board_medium.jpg
               "
-            />
+            >
             <!-- Medium -->
             <img
               src="./images/placeholder.png"
               data-src="./images/optimizedImg/phoneimgsize/shire_board_small.jpg"
               alt="Shire board"
-            />
+            >
           </picture>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Repudiandae, quam?
-          </p>
+          <h2>
+            Come and visit our local event board!
+          </h2>
+          <h2>
+            Average household size is 4
+          </h2>
         </div>
 
         <div class="shire_entry_div">
@@ -126,25 +104,29 @@
               srcset="
                 ./images/optimizedImg/desktopimgsize/shire_entry_large.jpg
               "
-            />
+            >
             <!-- Large -->
             <source
               media="(min-width: 400px)"
               srcset="
                 ./images/optimizedImg/tabletimgsize/shire_entry_medium.jpg
               "
-            />
+            >
             <!-- Medium -->
             <img
               src="./images/placeholder.png"
               data-src="./images/optimizedImg/phoneimgsize/shire_entry_small.jpg"
               alt="Shire entry"
-            />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-              eum.
-            </p>
+            >
           </picture>
+          <h2>
+            Bask and toil around the beautiful landscape of the Shire!
+          </h2>
+  
+        <h2>
+            Top 3 Industuries: Agriculture, Technologies, Hospitality 
+        </h2>
+            
         </div>
 
         <div class="shire_restaurant_div">
@@ -154,25 +136,28 @@
               srcset="
                 ./images/optimizedImg/desktopimgsize/shire_restaurant_large.jpg
               "
-            />
+            >
             <!-- Large -->
             <source
               media="(min-width: 400px)"
               srcset="
                 ./images/optimizedImg/tabletimgsize/shire_restaurant_medium.jpg
               "
-            />
+            >
             <!-- Medium -->
             <img
               src="./images/placeholder.png"
               data-src="./images/optimizedImg/phoneimgsize/shire_restaurant_small.jpg"
               alt="Shire restaurant"
-            />
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Adipisci, nemo?
-            </p>
+            >
+            
           </picture>
+          <h2>
+            Enjoy our amazing local foods and delicacies.
+          </h2>
+          <h2>
+            The total Population of the Shire is approximately 200,000 people
+          </h2>
         </div>
 
         <div class="shire_store_div">
@@ -182,53 +167,59 @@
               srcset="
                 ./images/optimizedImg/desktopimgsize/shire_store_large.jpg
               "
-            />
+            >
             <!-- Large -->
             <source
               media="(min-width: 400px)"
               srcset="
                 ./images/optimizedImg/tabletimgsize/shire_store_medium.jpg
               "
-            />
+            >
             <!-- Medium -->
             <img
               src="./images/placeholder.png"
               data-src="./images/optimizedImg/phoneimgsize/shire_store_small.jpg"
               alt="Shire store"
-            />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus,
-              officia.
-            </p>
+            >
+            
           </picture>
+          <h2>
+            Purchase souvenirs and other fun things on your way home!
+          </h2>
+          <h2>
+            Median Household Income: 60,000 gold
+          </h2>
         </div>
 
         <div class="shire_tent_div">
+            <h2>
+                The Poverty Rate is approximately less than 5%
+            </h2>
           <picture class="shire_tent_picture">
             <source
               media="(min-width: 600px)"
               srcset="
                 ./images/optimizedImg/desktopimgsize/shire_tent_large.jpeg
               "
-            />
+            >
             <!-- Large -->
             <source
               media="(min-width: 400px)"
               srcset="
                 ./images/optimizedImg/tabletimgsize/shire_tent_medium.jpeg
               "
-            />
+            >
             <!-- Medium -->
             <img
               src="./images/placeholder.png"
               data-src="./images/optimizedImg/phoneimgsize/shire_tent_small.jpeg"
               alt="Shire tent"
-            />
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Excepturi, optio?
-            </p>
+            >
+            
           </picture>
+          <h2>
+            Come and join us for our nightly get together supper.
+          </h2>
         </div>
         <div class="last_visit">
           <p>
@@ -244,7 +235,7 @@
         <img
           src="./images/webp/shirelogo.webp"
           alt="Shire Chamber Logo Footer"
-        />
+        >
         <div class="titleAddressDiv">
           <h2>The Shire Chamber of Commerce</h2>
           <p id="addressFooter">
@@ -253,15 +244,19 @@
         </div>
         <div class="contactLocDiv">
           <p id="contactNumber">+1(999) 999-999</p>
-          <img
-            id="locationMap"
-            src="./images/location.png"
-            alt="location icon"
-          />
+          <a
+            href="https://www.google.com/maps/place/Rexburg,+ID/@43.8300505,-111.7881829,13z/data=!3m1!4b1!4m6!3m5!1s0x53540a4b807a98b1:0x4a49d8d1d2181c73!8m2!3d43.8231096!4d-111.7924237!16zL20vMHMyYnE"
+          >
+            <img
+              id="locationMap"
+              src="./images/location.png"
+              alt="location icon"
+            >
+          </a>
         </div>
       </div>
 
-      <hr />
+      <hr>
       <div class="footerpardiv">
         <p>
           &copy; <span id="currentyear"></span> | Ynno Plucena | Rexburg Idaho
@@ -272,4 +267,3 @@
   </body>
 </html>
 
-<!-- Github won't upload for some reason -->

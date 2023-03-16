@@ -1,76 +1,93 @@
 [
-    {
-        "id":1,
-        "name":"Baggins University",
-        "address": "666 South 222 East",
-        "number": "202-918-2132",
-        "url": "https://baggins.edu",
-        "membership":"gold"
-    },
+  {
+    "id": 1,
+    "name": "Baggins University",
+    "address": "666 South 222 East",
+    "number": "202-918-2132",
+    "url": "https://baggins.edu",
+    "membership": "gold",
+    "description": "Pursue academic excellence at Baggins University, where students receive a well-rounded education and gain invaluable life skills in the heart of the Shire.",
+    "imgPath": "./images/optimizedSpotlight/bilbobaggins.png"
+  },
 
-    {
-        "id":2,
-        "name":"Third Breakfast",
-        "address":"999 West 232 North",
-        "number":"505-982-9832",
-        "url":"https://thirdbreakfast.com",
-        "membership":"bronze"
-
-    },
-    {
-        "id":3,
-        "name":"Hobbiton Inc.",
-        "address":"123 West 42 South",
-        "number":"505-356-8326",
-        "url":"https://hobbiton.org",
-        "membership":"silver"
-    },
-    {
-        "id":4,
-        "name":"Bigfoot Bakery",
-        "address":"600 South 200 East",
-        "number": "201-559-1184",
-        "url":"https://bigbakery.com",
-        "membership":"silver"
-    },
-    {
-        "id":5,
-        "name":"Foolery Tech",
-        "address":"125 West 62 South",
-        "number": "248-381-5068",
-        "url":"https://foolery.io",
-        "membership":"gold"
-    },
-    {
-        "id":6,
-        "name":"Bag End Brewery",
-        "address":"123 South 1 North",
-        "number":"412-662-3899",
-        "url":"https://bebrewery.com",
-        "membership":"silver"
-    },
-    {
-        "id":7,
-        "name":"Hobbiton Harvesters",
-        "address":"123 East 3 North",
-        "number": "229-289-7418",
-        "url":"https://hobbitonharvesters.org",
-        "membership":"bronze"
-    },
-    {
-        "id":8,
-        "name":"Fellowship Foods",
-        "address":"123 East 43 West",
-        "number":"240-492-4388",
-        "url":"https://fellowshipfoods.com",
-        "membership":"silver"
-    },
-    {
-        "id":9,
-        "name":"Mithril Mines Inc",
-        "address":"200 West 50 East",
-        "number":"313-556-8137",
-        "url":"https://mithrilmines.org",
-        "membership":"gold"
-    }
+  {
+    "id": 2,
+    "name": "Second Breakfast",
+    "address": "999 West 232 North",
+    "number": "505-982-9832",
+    "url": "https://secondbreakfast.com",
+    "membership": "gold",
+    "description": "Start your day off right at Second Breakfast, where you'll find mouth-watering dishes made with the freshest ingredients and served with a smile.",
+    "imgPath": "./images/optimizedSpotlight/secondbreakfast.png"
+  },
+  {
+    "id": 3,
+    "name": "Hobbiton Inc.",
+    "address": "123 West 42 South",
+    "number": "505-356-8326",
+    "url": "https://hobbiton.org",
+    "membership": "silver",
+    "description": "Trust Hobbiton Inc to find your dream home in the Shire, where you'll enjoy picturesque views and a peaceful, laid-back lifestyle.",
+    "imgPath": "./images/optimizedSpotlight/hobbitonincOp.png"
+  },
+  {
+    "id": 4,
+    "name": "Bigfoot Bakery",
+    "address": "600 South 200 East",
+    "number": "201-559-1184",
+    "url": "https://bigbakery.com",
+    "membership": "silver",
+    "description": "Satisfy your sweet tooth at Bigfoot Bakery, where you'll find delicious pastries, cakes, and breads baked fresh every day by skilled bakers.",
+    "imgPath": "./images/optimizedSpotlight/bigfootbakeryOp.png"
+  },
+  {
+    "id": 5,
+    "name": "Foolery Tech",
+    "address": "125 West 62 South",
+    "number": "248-381-5068",
+    "url": "https://foolery.io",
+    "membership": "gold",
+    "description": "Join the tech revolution with Foolery Tech, a start-up that's changing the world with innovative software and hardware solutions designed for everyday use.",
+    "imgPath": "./images/optimizedSpotlight/foolerytech.png"
+  },
+  {
+    "id": 6,
+    "name": "Bag End Brewery",
+    "address": "123 South 1 North",
+    "number": "412-662-3899",
+    "url": "https://bebrewery.com",
+    "membership": "silver",
+    "description": "Raise a glass to good times and great beer at Bag End Brewery, where expert brewers create unique and delicious brews inspired by the beauty of the Shire.",
+    "imgPath": "./images/optimizedSpotlight/bagginsbreweryOp.png"
+  },
+  {
+    "id": 7,
+    "name": "Hobbiton Harvesters",
+    "address": "123 East 3 North",
+    "number": "229-289-7418",
+    "url": "https://hobbitonharvesters.org",
+    "membership": "bronze",
+    "description": "Support local agriculture and taste the difference with Hobbiton Harvesters, where fresh, seasonal produce is grown with care and sold with pride.",
+    "imgPath": "./images/optimizedSpotlight/hobbitharvestersOp.png"
+  },
+  {
+    "id": 8,
+    "name": "Fellowship Foods",
+    "address": "123 East 43 West",
+    "number": "240-492-4388",
+    "url": "https://fellowshipfoods.com",
+    "membership": "silver",
+    "description": " Keep your pantry stocked with high-quality, locally sourced ingredients from Fellowship Foods, where you'll find a wide range of wholesale foods at competitive prices.",
+    "imgPath": "./images/optimizedSpotlight/fellowshipfoodsop.png"
+  },
+  {
+    "id": 9,
+    "name": "Mithril Mines Inc",
+    "address": "200 West 50 East",
+    "number": "313-556-8137",
+    "url": "https://mithrilmines.org",
+    "membership": "gold",
+    "description": "Venture deep into the earth at Mithril Mines, where skilled miners extract precious metals and gems that are sought after by jewelers and smiths across Middle-earth.",
+    "imgPath": "./images/optimizedSpotlight/mithrilmines.png"
+  }
 ]

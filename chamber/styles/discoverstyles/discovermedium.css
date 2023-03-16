@@ -79,6 +79,10 @@
             
     }
 
+    #meetandgreet {
+        display: none;
+    }
+    
     #meetandgreet.active {
         background-color: grey;
         text-align: center;

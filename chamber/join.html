@@ -1,145 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Add Meta Tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber of Commerce website demonstration for WDD - 230 BYU-Idaho">
-    <link rel="icon" href="./favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./styles/base.css">  
-    <link rel="stylesheet" href="./styles/medium.css">  
-    <link rel="stylesheet" href="./styles/large.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Chamber of Commerce website demonstration for WDD - 230 BYU-Idaho"
+    />
+    <link rel="icon" href="./favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/large.css" />
     <script src="./scripts/app.js" defer></script>
     <script src="./scripts/main.js" defer></script>
     <script src="./scripts/formLoaded.js" defer></script>
     <title>The Shire Chamber of Commerce</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div id="meetandgreet">
-            🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m
+      <div id="meetandgreet">
+        🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m
+      </div>
+
+      <div id="headerDiv">
+        <div class="headerLogoDiv">
+          <img src="./images/webp/shirelogo.webp" alt="Shire Chamber Logo" />
         </div>
-        
-        <div id="headerDiv">
-            <div class="headerLogoDiv">
-                <img src="./images/webp/shirelogo.webp" alt="Shire Chamber Logo">
-            </div>
-            <div class="headerTitle"><h1 id="logoNameh1">The Shire Chamber of Commerce</h1></div>
-            <div class="socialmedialogo">
-                <a><img src="./images/facebook-logo.png" alt="Facebook Logo"></a>
-                <a><img src="./images/linkedin.png" alt="LinkedIn Logo"></a>
-            </div>
+        <div class="headerTitle">
+          <h1 id="logoNameh1">The Shire Chamber of Commerce</h1>
         </div>
+        <div class="socialmedialogo">
+          <a href="https://www.facebook.com/"
+            ><img src="./images/facebook-logo.png" alt="Facebook Logo"
+          /></a>
+          <a href="https://www.linkedin.com/in/ynno-plucena-aa58aa210/"
+            ><img src="./images/linkedin.png" alt="LinkedIn Logo"
+          /></a>
+        </div>
+      </div>
 
+      <nav>
+        <button id="menu">
+          <span id="hamburger-x"
+            ><img src="./images/menu-close.png" alt="menu close"
+          /></span>
+          <span id="hamburger-equiv"
+            ><img src="./images/menu-icon.png" alt="menu icon"
+          /></span>
+        </button>
 
-        <nav>
-            
-            <button id="menu">
-                <span id="hamburger-x"><img src="./images/menu-close.png" alt="menu close"></span>
-                <span id="hamburger-equiv"><img src="./images/menu-icon.png" alt="menu icon"></span>
-              </button>
+        <ul id="navList">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="./directory.html">Directory</a></li>
+          <li><a href="./join.html" class="navactive">Join</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
 
-            <ul id="navList">
-                <li><a href="./index.html"  >Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="./directory.html">Directory</a></li>
-                <li><a href="./join.html" class="navactive">Join</a></li>
-                <li><a href="#">Contact</a></li>        
-            </ul>
-        </nav>
-        
-        <div id="dateTimeDiv"><p id="dateTime"></p></div>
-        
+      <div id="dateTimeDiv"><p id="dateTime"></p></div>
     </header>
 
     <main>
+        <section class="join-section">
+            <div class="join-form">
+                <form method="get" action="./thankyou.html" id="form-area">
+                  <label for="firstname"> First Name </label>
+                  <input type="text" name="firstName" id="firstname" required />
         
-        <div class="join-form">
-            <form method="get" action="./thankyou.html" id="form-area">
-                <label for="firstname"> First Name </label>
-                <input type="text" name="firstName" id="firstname" required>
-
-                <label for="lastName">Last Name </label>
-                <input type="text" required name="lastName" id="lastName">
-
-                <label for="position">Position </label>
-                <input type="text" required name="business" minlength="7" id="position">
-
-                <label for="email">Email </label>
-                <input type="email" required name="email" id="email">
-
-                <label for="cell-number"> Phone Number </label>
-                <input type="tel" required name="cell-number" id="cell-number">
-
-                <div id="radio-div">
+                  <label for="lastName">Last Name </label>
+                  <input type="text" required name="lastName" id="lastName" />
+        
+                  <label for="position">Position </label>
+                  <input
+                    type="text"
+                    required
+                    name="business"
+                    minlength="7"
+                    id="position"
+                  />
+        
+                  <label for="email">Email </label>
+                  <input type="email" required name="email" id="email" />
+        
+                  <label for="cell-number"> Phone Number </label>
+                  <input type="tel" required name="cell-number" id="cell-number" />
+        
+                  <div id="radio-div">
                     <label for="np-membership">NP Membership</label>
-                    <input type="radio" id="np-membership" name="membership">
-                    
-                    <label for="bronze-membership">Bronze Membership</label>
-                    <input type="radio" id="bronze-membership" value="membership" name="membership">
-                    
-                    <label for="silver-membership">Silver Membership</label>
-                    <input type="radio" id="silver-membership" value="membership" name="membership">
-                    
-                    <label for="gold-membership">Gold Membership</label>    
-                    <input type="radio" id="gold-membership" value="membership" name="membership">
-
-                </div>
-                
-                <textarea name="business-textarea" id="form-textarea"></textarea>
-                <input type="hidden" name="form-loaded-at" id="form-loaded-at">
-                <input type="submit" value="Join Us!">
-            </form>
-            
-        </div>
-        <div class="membership-options">
-            <h1>Membership Options</h1>
-            <h2>NP Membership</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque asperiores blanditiis 
-            eius numquam ipsam veritatis dolorem, deleniti laborum! Dolorum ipsam ipsum similique asperiores
-            modi iusto distinctio dolor fuga consectetur quam.</p>
-            <h2>Bronze Membership</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi totam tempore incidunt voluptas est 
-                nemo quo illo veritatis dolores. Repudiandae a nulla magni, dolore non harum deserunt minima! 
-                Aperiam, saepe.</p>
-            <h2>Silver Membership</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet reprehenderit consequatur
-                 quae voluptatibus cum temporibus recusandae. Illo enim magni, 
-                incidunt necessitatibus modi quisquam beatae, quos a natus voluptatem, quibusdam facere.</p>
+                    <input type="radio" id="np-membership" name="membership" />
         
-            <h2>Gold Membership</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab minus 
-                dolores quod nemo reprehenderit dicta, 
-                deserunt veniam eveniet nesciunt reiciendis sit animi hic. Officiis 
-                aliquid accusamus optio, quasi fuga veniam.</p>
-        </div>
+                    <label for="bronze-membership">Bronze Membership</label>
+                    <input
+                      type="radio"
+                      id="bronze-membership"
+                      value="membership"
+                      name="membership"
+                    />
+        
+                    <label for="silver-membership">Silver Membership</label>
+                    <input
+                      type="radio"
+                      id="silver-membership"
+                      value="membership"
+                      name="membership"
+                    />
+        
+                    <label for="gold-membership">Gold Membership</label>
+                    <input
+                      type="radio"
+                      id="gold-membership"
+                      value="membership"
+                      name="membership"
+                    />
+                  </div>
+        
+                  <textarea name="business-textarea" id="form-textarea"></textarea>
+                  <input type="hidden" name="form-loaded-at" id="form-loaded-at" />
+                  <input type="submit" value="Join Us!" />
+                </form>
+              </div>
+              <div class="membership-options">
+                <h1>Membership Options</h1>
+                <h2>NP Membership</h2>
+                <p>
+                  The NP Membership is our free membership option that allows you to
+                  stay informed about our events, news and updates. You will receive our
+                  monthly newsletter and be invited to attend our networking events.
+                </p>
+                <h2>Bronze Membership</h2>
+                <p>
+                  Our Bronze Membership offers additional benefits to enhance your
+                  business growth. You will receive discounts on our training programs
+                  and events, as well as have the opportunity to showcase your business
+                  on our website and social media platforms.
+                </p>
+                <h2>Silver Membership</h2>
+                <p>
+                  Our Silver Membership provides you with even more opportunities to
+                  promote your business and connect with other local businesses. You
+                  will receive priority access to our networking events and be able to
+                  participate in our mentorship program.
+                </p>
+        
+                <h2>Gold Membership</h2>
+                <p>
+                  Our Gold Membership is our premium membership option that provides
+                  exclusive benefits to help you grow your business. You will have
+                  access to all of our training programs and events, as well as receive
+                  personalized business coaching and consulting services. Additionally,
+                  you will have the opportunity to join our board of directors and help
+                  shape the direction of the Chamber.
+                </p>
+              </div>
+        </section>
+      
     </main>
 
     <footer>
-        
-        <div class="footerDiv">
-            <img src="./images/webp/shirelogo.webp" alt="Shire Chamber Logo Footer">
-            <div class="titleAddressDiv">
-                <h2>The Shire Chamber of Commerce</h2>
-                <p id="addressFooter">999 South Center 3rd St., Hobbiton, Shire, Middle-Earth</p>    
-            </div>
-            <div class="contactLocDiv">
-                <p id="contactNumber">+1(999) 999-999 </p>
-                <img id="locationMap" src="./images/location.png" alt="location icon">
-            </div>
+      <div class="footerDiv">
+        <img
+          src="./images/webp/shirelogo.webp"
+          alt="Shire Chamber Logo Footer"
+        />
+        <div class="titleAddressDiv">
+          <h2>The Shire Chamber of Commerce</h2>
+          <p id="addressFooter">
+            999 South Center 3rd St., Hobbiton, Shire, Middle-Earth
+          </p>
         </div>
-        
-        <hr>
-        <div class="footerpardiv">
-            <p>&copy; <span id="currentyear"></span> | Ynno Plucena | Rexburg Idaho </p>
-            <p> Last Updated: <span id="lastmodified"></span></p>
+        <div class="contactLocDiv">
+          <p id="contactNumber">+1(999) 999-999</p>
+          <a
+            href="https://www.google.com/maps/place/Rexburg,+ID/@43.8300505,-111.7881829,13z/data=!3m1!4b1!4m6!3m5!1s0x53540a4b807a98b1:0x4a49d8d1d2181c73!8m2!3d43.8231096!4d-111.7924237!16zL20vMHMyYnE"
+          >
+            <img
+              id="locationMap"
+              src="./images/location.png"
+              alt="location icon"
+            />
+          </a>
         </div>
-        
+      </div>
+
+      <hr />
+      <div class="footerpardiv">
+        <p>
+          &copy; <span id="currentyear"></span> | Ynno Plucena | Rexburg Idaho
+        </p>
+        <p>Last Updated: <span id="lastmodified"></span></p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
 
 <!-- Github won't upload for some reason -->

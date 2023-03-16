@@ -1,138 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!-- Add Meta Tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Chamber of Commerce website demonstration for WDD - 230 BYU-Idaho">
-    <link rel="icon" href="./favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="./styles/base.css">  
-    <link rel="stylesheet" href="./styles/medium.css">  
-    <link rel="stylesheet" href="./styles/large.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Chamber of Commerce website demonstration for WDD - 230 BYU-Idaho"
+    />
+    <link rel="icon" href="./favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./styles/base.css" />
+    <link rel="stylesheet" href="./styles/medium.css" />
+    <link rel="stylesheet" href="./styles/large.css" />
     <script src="./scripts/app.js" defer></script>
     <script src="./scripts/main.js" defer></script>
     <script src="./scripts/weatherAPI.js" defer></script>
+    <script src="./scripts/loadBusData.js" defer></script>
     <title>The Shire Chamber of Commerce</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div id="meetandgreet">
-            🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m
+      <div id="meetandgreet">
+        🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m
+      </div>
+
+      <div id="headerDiv">
+        <div class="headerLogoDiv">
+          <img src="./images/webp/shirelogo.webp" alt="Shire Chamber Logo" />
         </div>
-        
-        <div id="headerDiv">
-            <div class="headerLogoDiv">
-                <img src="./images/webp/shirelogo.webp" alt="Shire Chamber Logo">
-            </div>
-            <div class="headerTitle"><h1 id="logoNameh1">The Shire Chamber of Commerce</h1></div>
-            <div class="socialmedialogo">
-                <a><img src="./images/facebook-logo.png" alt="Facebook Logo"></a>
-                <a><img src="./images/linkedin.png" alt="LinkedIn Logo"></a>
-            </div>
+        <div class="headerTitle">
+          <h1 id="logoNameh1">The Shire Chamber of Commerce</h1>
         </div>
+        <div class="socialmedialogo">
+          <a href="https://www.facebook.com/"
+            ><img src="./images/facebook-logo.png" alt="Facebook Logo"
+          /></a>
+          <a href="https://www.linkedin.com/in/ynno-plucena-aa58aa210/"
+            ><img src="./images/linkedin.png" alt="LinkedIn Logo"
+          /></a>
+        </div>
+      </div>
 
+      <nav>
+        <button id="menu">
+          <span id="hamburger-x"
+            ><img src="./images/menu-close.png" alt="menu close"
+          /></span>
+          <span id="hamburger-equiv"
+            ><img src="./images/menu-icon.png" alt="menu icon"
+          /></span>
+        </button>
 
-        <nav>
-            
-            <button id="menu">
-                <span id="hamburger-x"><img src="./images/menu-close.png" alt="menu close"></span>
-                <span id="hamburger-equiv"><img src="./images/menu-icon.png" alt="menu icon"></span>
-              </button>
+        <ul id="navList">
+          <li><a href="./index.html" class="navactive">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="./directory.html">Directory</a></li>
+          <li><a href="./join.html">Join</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
 
-            <ul id="navList">
-                <li><a href="./index.html" class="navactive" >Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="./directory.html">Directory</a></li>
-                <li><a href="./join.html">Join</a></li>
-                <li><a href="#">Contact</a></li>        
-            </ul>
-        </nav>
-        
-        <div id="dateTimeDiv"><p id="dateTime"></p></div>
-        
+      <div id="dateTimeDiv"><p id="dateTime"></p></div>
     </header>
 
     <main>
-        <div class="herodiv">
-            <picture class="heroPic">
-                <source srcset="./images/optimizedImg/desktopimgsize/shire_entry_large.jpg">
-                <img src="./images/optimizedImg/desktopimgsize/shire_entry_large.jpg" class="herodivimg" alt="Hero Img">    
-            </picture>
-            <h1>Welcome to the Shire</h1>
-            <h2><a href="./join.html">Join Us</a></h2>
-        </div>
+      <div class="herodiv">
+        <picture class="heroPic">
+          <source
+            srcset="./images/optimizedImg/desktopimgsize/shire_entry_large.jpg"
+          />
+          <img
+            src="./images/optimizedImg/desktopimgsize/shire_entry_large.jpg"
+            class="herodivimg"
+            alt="Hero Img"
+          />
+        </picture>
+        <h1>Welcome to the Shire</h1>
+        <h2><a href="./join.html">Join Us</a></h2>
+      </div>
 
-        <div class="eventDiv">
-            <h1>Meet and Greet</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio ab natus nesciunt mollitia quo maiores maxime itaque modi consequatur asperiores.</p>
-        </div>
+      <div class="eventDiv">
+        <h1>Meet and Greet</h1>
+        <p>
+          Welcome to the Shire Chamber of Commerce! Our goal is to promote and
+          support local businesses in the Shire community. We believe that by
+          working together, we can create a thriving local economy that benefits
+          everyone. We offer a variety of resources and events to help our
+          members grow and succeed, including networking opportunities,
+          educational workshops, and marketing support. Whether you're a small
+          business owner or a member of the community who wants to support local
+          commerce, we invite you to join us and become a part of the Shire
+          Chamber of Commerce today.
+        </p>
+      </div>
 
-        <div class="weatherDiv">
-            <h1>Weather</h1>
-            <div class="weathertemp">
-                <img alt="Weather Icon" id="weather-icon">
-                <h1> <span id="temperatureSpan"></span> </h1>
-            </div>
-            <h2><span id="weatherDesc"></span></h2>
-            <hr>
-            <p>Wind Chill: <span id="windchillSpan"></span></p>
-            <p>Wind Speed: <span id="windspeedSpan"></span></p>
+      <div class="weatherDiv">
+        <h1>Weather</h1>
+        <div class="weathertemp">
+          <img alt="Weather Icon" id="weather-icon" />
+          <h1><span id="temperatureSpan"></span></h1>
         </div>
+        <h2><span id="weatherDesc"></span></h2>
+        <hr />
+        <p>Wind Chill: <span id="windchillSpan"></span></p>
+        <p>Wind Speed: <span id="windspeedSpan"></span></p>
+      </div>
 
-        <div class="joinDiv">
-            <h1><a href="./join.html">Join</a></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem facere nostrum voluptate reprehenderit ipsa vitae deleniti esse aperiam reiciendis delectus iure nihil, perspiciatis unde minima ut obcaecati at cumque veniam placeat inventore consequuntur veritatis id perferendis? Doloremque nam cumque eius provident, rerum, dicta modi sit nostrum vel veniam ipsum alias.</p>
-        </div>
-        
-        <div class="newReleaseDiv">
-            <h1>New releases</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero inventore maiores beatae sequi quasi, eveniet, illum omnis veniam ut iusto asperiores cupiditate voluptas a nemo, quos sed laudantium perspiciatis tempore perferendis. Vel, repudiandae odit ab aspernatur, eaque obcaecati voluptas fugiat sit impedit harum sapiente quas distinctio fugit corporis corrupti quasi.</p>
-        </div>
+      <div class="joinDiv">
+        <h1><a href="./join.html">Join</a></h1>
+        <p>
+          Come and join us and apply for membership options to featured in our
+          next Meet and Greet event!
+        </p>
+      </div>
 
-        <div class="spotlightDiv">
-            <div class="spotlight1div">
-                <h1>Second Breakfast</h1>
-                <img src="./images/optimizedImg/breakfast.png" alt="Second Breakfast">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam unde neque deserunt assumenda mollitia, fugit dicta ducimus quia? Dignissimos minus neque officiis minima sapiente cum, ratione omnis hic laborum perferendis.</p>
-            </div>
-            <div class="spotlight2div">
-                <h1>Baggins University</h1>
-                <img src="./images/optimizedImg/bilbobaggins.png" alt="Baggins Uni">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, suscipit odio. Dolorum, nesciunt. Amet quis excepturi facere laborum incidunt quia voluptatem, voluptates, optio aperiam consectetur temporibus eum nesciunt. Quod, non!</p>
-            </div>
-            <div class="spotlight3div">
-                <h1>Fellowship of the Ring Holiday Event</h1>
-                <img src="./images/optimizedImg/ring.png" alt="Ring">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae ipsa, quis, aut tempore cum hic soluta itaque, excepturi ea dolorum pariatur assumenda provident in praesentium eius necessitatibus! Harum, rem optio.</p>
-            </div>
+      <div class="newReleaseDiv">
+        <h1>New releases</h1>
+        <p>
+          Introducing our newest release! Get ready to experience the latest and
+          greatest features that we've been working on. Upgrade your membership
+          now to enjoy enhanced privileges, improved performance, and a sleek
+          new design. Don't miss out on Second Breakfast's all new menu
+          including Aragorn's pie and Boromir's last meal!
+        </p>
+      </div>
+
+      <div class="spotlightDiv">
+        <!-- <div class="spotlight1div">
+          <h1>Second Breakfast</h1>
+          <img
+            src="./images/optimizedImg/breakfast.png"
+            alt="Second Breakfast"
+          />
+          <p>
+            Welcome to Second Breakfast! Enjoy locally-sourced ingredients and
+            classic dishes in a cozy atmosphere. Join us for breakfast, lunch,
+            or dinner today.
+          </p>
         </div>
+        <div class="spotlight2div">
+          <h1>Baggins University</h1>
+          <img src="./images/optimizedImg/bilbobaggins.png" alt="Baggins Uni" />
+          <p>
+            Welcome to Baggin's University, where knowledge meets adventure! Our
+            accredited institution offers a variety of programs to help you
+            pursue your academic and career goals. Join us and start your
+            journey today.
+          </p>
+        </div>
+        <div class="spotlight3div">
+          <h1>Fellowship of the Ring Holiday Event</h1>
+          <img src="./images/optimizedImg/ring.png" alt="Ring" />
+          <p>
+            Come and join us for the upcoming Fellowship of the Ring Holiday
+            event! There will be a number of activities and performers present
+            during the event!
+          </p>
+        </div> -->
+      </div>
     </main>
 
     <footer>
-        
-        <div class="footerDiv">
-            <img src="./images/webp/shirelogo.webp" alt="Shire Chamber Logo Footer">
-            <div class="titleAddressDiv">
-                <h2>The Shire Chamber of Commerce</h2>
-                <p id="addressFooter">999 South Center 3rd St., Hobbiton, Shire, Middle-Earth</p>    
-            </div>
-            <div class="contactLocDiv">
-                <p id="contactNumber">+1(999) 999-999 </p>
-                <img id="locationMap" src="./images/location.png" alt="location icon">
-            </div>
+      <div class="footerDiv">
+        <img
+          src="./images/webp/shirelogo.webp"
+          alt="Shire Chamber Logo Footer"
+        />
+        <div class="titleAddressDiv">
+          <h2>The Shire Chamber of Commerce</h2>
+          <p id="addressFooter">
+            999 South Center 3rd St., Hobbiton, Shire, Middle-Earth
+          </p>
         </div>
-        
-        <hr>
-        <div class="footerpardiv">
-            <p>&copy; <span id="currentyear"></span> | Ynno Plucena | Rexburg Idaho </p>
-            <p> Last Updated: <span id="lastmodified"></span></p>
+        <div class="contactLocDiv">
+          <p id="contactNumber">+1(999) 999-999</p>
+          <a
+            href="https://www.google.com/maps/place/Rexburg,+ID/@43.8300505,-111.7881829,13z/data=!3m1!4b1!4m6!3m5!1s0x53540a4b807a98b1:0x4a49d8d1d2181c73!8m2!3d43.8231096!4d-111.7924237!16zL20vMHMyYnE"
+          >
+            <img
+              id="locationMap"
+              src="./images/location.png"
+              alt="location icon"
+            />
+          </a>
         </div>
-        
+      </div>
+
+      <hr />
+      <div class="footerpardiv">
+        <p>
+          &copy; <span id="currentyear"></span> | Ynno Plucena | Rexburg Idaho
+        </p>
+        <p>Last Updated: <span id="lastmodified"></span></p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
 
 <!-- Github won't upload for some reason -->
