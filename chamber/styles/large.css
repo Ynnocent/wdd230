@@ -17,6 +17,7 @@
     .socialmedialogo img {
         height: auto;
         width: 60px;
+        padding: .5rem;
     }
 
     #headerDiv {
@@ -37,7 +38,6 @@
         padding: 10px;
         padding-left: 50px;
         padding-right: 50px;
-        /* text-decoration: none; */
     }
 
     nav ul li {
@@ -262,6 +262,11 @@
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
+
+    .discover_section h2 {
+        font-size: 30px;
+    }
+
     picture img[data-src]{
         filter: blur(0.3em);
         width: 300px;
@@ -418,9 +423,10 @@
     /* Join Area */
     .join-section {
         grid-column: 1/5;
-        max-width: 1300px;
+        max-width: 2000px;
         display: flex;
         flex-direction:row;
+
         justify-self: center;
         text-align: center;
         justify-content: space-between;
@@ -431,7 +437,10 @@
         padding: 1rem;
         margin: 1rem;
         grid-column: 3/4;
-        width: 90vh;
+        max-width: 90vh;
+        height: 100vh;
+        flex-wrap: wrap;
+        overflow: hidden;
     }
 
     .membership-options h2,p {
@@ -440,6 +449,7 @@
 
     .join-form {
         display: flex;
+        max-width: 2000px;
     }
 
     #form-area {
@@ -511,18 +521,7 @@
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
-    #directory-container.in-list-mode {
-        display: table;
-    }
 
-    #directory-container.in-list-mode ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    #directory-container.in-list-mode img {
-        display: none;
-    }
     .business-card {
         list-style: none;
         background-color: #3A472E;
@@ -531,16 +530,36 @@
         display: flex;
         flex-direction: column;
         text-align:center;
+        flex-wrap: wrap;
         justify-content: center;
+        max-width: 350px;
+        min-width: 350px;
 
     }
+
+    #directory-container.in-list-mode {
+        display: table;
+    }
+
+    #directory-container.in-list-mode ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        max-width: 2000px;
+    }
+
+    #directory-container.in-list-mode img {
+        display: none;
+    }
+    
 
     .business-card a {
         text-decoration: none;
         color: gold;
+        flex-wrap: wrap;
     }
     .business-card img {
-        width: 90px;
+        max-width: 90px;
         height: auto;
         padding: .5rem;
         text-align: center;
@@ -549,6 +568,7 @@
     .business-card li {
         padding: 0.5rem;
         font-size: 20px;
+        flex-wrap: wrap;
     }
     #goldmembership {
         border: 5px solid gold;
@@ -557,6 +577,11 @@
     .footerDiv {
         display: flex;
         justify-content: space-between;
+    }
+
+    .footerDiv img {
+        max-width: 90px;
+        max-height: 90px;
     }
 
     #locationMap {

@@ -17,6 +17,7 @@
     .socialmedialogo img {
         height: auto;
         width: 30px;
+        padding: .5rem;
     }
 
     #headerDiv {
@@ -329,7 +330,7 @@
 
     /* Discover Page */
     .discover_section {
-        width: 370px;
+        max-width: 370px;
         font-size: 12px;
     }
     picture img[data-src]{
@@ -470,6 +471,7 @@
         flex-direction: column;
         text-align:center;
         justify-content: center;
+        min-width: 280px;
 
     }
     .business-card img {
@@ -482,6 +484,11 @@
     .business-card li {
         padding: 0.5rem;
         font-size: 20px;
+    }
+
+    .business-card li a {
+        text-decoration: none;
+        color: gold;
     }
     #goldmembership {
         border: 5px solid gold;
