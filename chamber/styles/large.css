@@ -110,7 +110,8 @@
     /* Burger Menu */
 
     #dateTimeDiv {
-        text-align: center;
+        display: flex;
+        justify-content: center;
         background-color: rgb(37, 37, 37);
         padding: 5px;
         margin-top: 5px;
@@ -443,8 +444,16 @@
         overflow: hidden;
     }
 
-    .membership-options h2,p {
+    .membership-options p {
         text-align: left;
+    }
+
+    .membership-options h2 {
+        font-size: 30px;
+    }
+
+    .membership-options h4 {
+        font-size: 25px;
     }
 
     .join-form {
@@ -573,6 +582,22 @@
     #goldmembership {
         border: 5px solid gold;
         border-radius: .5rem;
+    }
+
+    /* Contact Page */
+    .contact-div {
+        grid-column: 1/5;
+        padding: 1rem;
+        background-color: #3A472E;
+    }
+    .social-contact img{
+        width: 90px;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .contact-address {
+        padding: 1rem;
     }
     .footerDiv {
         display: flex;
