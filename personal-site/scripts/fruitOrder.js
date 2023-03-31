@@ -1,4 +1,4 @@
-const fruitURL = `../data/fruityvice.json`;
+const fruitURL = `/wdd230/personal-site/data/fruityvice.json`;
 const orderButton = document.querySelector("#orderButton");
 
 const fruitChoice1 = document.querySelector("#choice1Name");
