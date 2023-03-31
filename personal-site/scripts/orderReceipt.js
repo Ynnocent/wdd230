@@ -20,7 +20,7 @@ function displayOrderReceipt() {
 
 async function getFruitsApi() {
     try {
-        const url = '../data/fruityvice.json';
+        const url = '/wdd230/personal-site/data/fruityvice.json';
 
         let response = await fetch(url);
         let orderList = JSON.parse(localStorage.getItem('orderList'));
