@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat&display=swap');
+:root {
+    --primary-color-100: #2C3333;
+    --primary-color-200: #2E4F4F;
+    --primary-color-300: #0e8388;
+    --primary-color-400: #cbe4de;
+
+    --secondary-color-100: #ffbf9b;
+    --secondary-color-200: #b46060;
+    --secondary-color-300: #4d4d4d;
+
+    background-color: var(--primary-color-100);
+
+    color: var(--primary-color-400);
+    
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    font-family: 'Montserrat', Helvetica;
+}
+
+h2 {
+    font-family: 'Montserrat', Helvetica;
+}
+
+h3 {
+    font-family: 'Montserrat', Helvetica;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}

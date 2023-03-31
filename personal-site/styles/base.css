@@ -1,0 +1,242 @@
+@media screen  and (max-width: 480px) {
+    header, footer, main {
+        max-width: 480px;
+        padding: 1rem;
+        font-size: 12px;
+    }
+
+    /* Header */
+
+    header, footer {
+        display: flex;
+        align-items: center;
+        background-color: var(--primary-color-200);
+        justify-content: space-between;
+    }
+
+    #logo {
+        width: 60px;
+        height: auto;
+        margin: .5rem;
+    }
+
+
+    nav ul {
+        list-style: none;
+    }
+
+    nav ul li {
+        padding: .2rem;
+    }
+
+    nav ul li a{
+        text-decoration: none;
+        color: var(--primary-color-500);
+    }
+
+    .navactive {
+        background-color: var(--primary-color-400);
+        color: black;
+        padding: .3rem;
+        border-radius: .2rem;
+        font-size: 13px;
+    }
+
+    .social-div-header {
+        display: flex;
+        align-items: center;
+        max-width: 180px;
+        justify-content: space-between;
+    }
+
+    #instagram-logo {
+        width: 35px;
+        height: auto;
+    }
+
+    #facebook-logo {
+        width: 45px;
+        height: auto;
+    }
+
+    #tiktok-logo {
+        height: 60px;
+    }
+
+    /* Main */
+    main {
+        color: black;
+    }
+
+    .hero-div {
+        background-color: var(--primary-color-300);
+        max-width: 480px;
+        padding: 1rem;
+        margin: .5rem;
+        text-align: center;
+        position: relative;
+    }
+    .hero-div img {
+        object-fit: cover;
+        max-width: 280px;
+        height: auto;
+    }
+
+    .hero-div h2 {
+        font-size: 15px;
+        background-color: var(--primary-color-300);
+        padding: .2rem;
+        border-radius: .5rem;
+        position: absolute;
+        top: 10%;
+        right: 20%;
+    }
+
+    .hero-div a {
+        bottom: 10%;
+        right: 20%;
+        position: absolute;
+        text-decoration: none;
+        color: var(--primary-color-100);
+        background-color: var(--secondary-color-100);
+        padding: .5rem;
+        border-radius: .5rem;
+    }
+
+    .card-div {
+        display: grid;
+        grid-template-areas: 'weather testimonial'
+                    'fresh fresh';
+    }
+
+    .weather-card {
+        grid-area: weather;
+        background-color: var(--primary-color-300);
+        max-width: 240px;
+        padding: 1rem;
+        margin: .5rem;
+        text-align: center;
+    }
+
+    .testimonial-card {
+        display: none;
+        grid-area: testimonial;
+        background-color: var(--primary-color-300);
+        max-width: 240px;
+        padding: 1rem;
+        margin: .5rem;
+        text-align: center;
+    }
+    .spotlight-card {
+        grid-area: testimonial;
+        background-color: var(--primary-color-300);
+        max-width: 240px;
+        padding: 1rem;
+        margin: .5rem;
+        text-align: center;
+    }
+    .spotlight-card p {
+        text-align: left;
+        line-height: 1.5;
+    }
+    .fresh-card {
+        grid-area: fresh;
+        background-color: var(--primary-color-300);
+        max-width: 480px;
+        padding: 1rem;
+        margin: .5rem;
+        text-align: center;
+    }
+
+    .fresh-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #fresh-form {
+        background-color: var(--primary-color-300);
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        margin: 1rem;
+        max-width: fit-content;
+        min-height: auto;
+        align-items: center;
+    }
+    #fresh-form > * {
+        margin: .5rem;
+        
+    }
+
+    .drink-options {
+        background-color: var(--primary-color-300);
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .fruit-radio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fruit-radio > * {
+        padding: .5rem;
+    }
+
+
+    .order-receipt-div {
+        background-color: var(--primary-color-300);
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .order-receipt-div h1 {
+        text-align: center;
+    }
+
+    .nutrition-div {
+        background-color: var(--primary-color-300);
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .nutrition-div h1 {
+        text-align: center;
+    }
+    .about-div {
+        background-color: var(--primary-color-300);
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .about-div h1 {
+        text-align: center;
+    }
+
+    .about-div h3 {
+        line-height: 1.7;
+        text-align: justify;
+    }
+    .about-div img {
+        width: 60px;
+    }
+    
+    /* Footer */
+
+    .footer-div{
+        background-color: var(--primary-color-200);
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    .bussiness-info {
+        max-width: 100px;
+        text-align: center;
+    }
+    #location-icon {
+        width: 30px;
+        height: auto;
+    }
+}

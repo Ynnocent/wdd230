@@ -4,10 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bountiful Foods an E-Commerce website demostration for BYU-Idaho WDD - 230 Ynno Plucena">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <link rel="stylesheet" href="./styles/root.css">
+    <link rel="icon" href="./favicon.ico">
+
+    <script src="./scripts/weatherAPI.js" defer></script>
+    <script src="./scripts/accessOrder.js" defer></script>
+    <script src="./scripts/lastModified.js" defer></script>
     <!-- Add Meta Tag -->
-    <title>Personal Site</title>
+    <title>Bountiful Food</title>
 </head>
 <body>
-    
+    <header>
+        <img src="./images/site-logo/Bountiful-Foods-logos.webp" id="logo" alt="Bountiful Foods Logo">
+        <div class="social-div-header">
+            <a href="https://www.facebook.com/"><img id="facebook-logo" src="./images/social-media-logo/facebook-icon-logo.png" alt="Facebook Link"></a>
+            <a href="https://www.instagram.com/"><img id="instagram-logo" src="./images/social-media-logo/instagram-social-icon.png" alt="Instagram"></a>
+            
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#" class="navactive">Home</a></li>
+                <li><a href="./fresh.html">Fresh</a></li>
+                <li><a href="./about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home-main">
+        
+        <div class="hero-div">
+            <img id="hero-img" src="./images/hero-image.jpg" alt="hero-image">
+            <h2>Welcome to Bountiful Foods</h2>
+            <a href="./fresh.html">Make a Drink!</a>
+        </div>
+
+        <div class="card-div">
+            <div class="weather-card">
+                <h1>Weather</h1>
+                <h2><span id="weatherDescription"></span></h2>
+                <img src="" alt="Weather Icon" id="weatherIcon">
+                <h3>temperature: <span id="weatherTemp"></span>&#8457;</h3>
+                <hr>
+                <h3>Humidity: <span id="humidityDescription"></span>&#37;</h3>
+                <div class="three-day-forecast">
+                    <p>Tomorrow's temperature: <span id="forecast1"></span> &#8457;</p>
+                    <p>In two days temperature: <span id="forecast2"></span> &#8457;</p>
+                    <p>In three days temperature: <span id="forecast3"></span> &#8457;</p>
+                </div>
+            </div>
+            <div class="testimonial-card">
+                <h1>Testimonies</h1>
+                <div class="testimonies-div">
+                    <h3>John Smith</h3>
+                    <p>"I recently tried Bountiful Foods' specialty fruit drinks and they are simply amazing! The drinks are made fresh and you can taste the quality ingredients in every sip. I also love the fact that they use locally sourced fruits and support the community. Highly recommend!"</p>
+                    <h3>Jane Doe</h3>
+                    <p>"Bountiful Foods has been my go-to for fresh produce for years now. They always have a wide variety of fruits and vegetables to choose from, and everything is always fresh and delicious. I recently tried their build-your-own fruit drink and it did not disappoint. Can't wait to come back for more!"</p>
+                </div>
+                <div class="tiktok-anchor">
+                    <h3>Visit Our New Tiktok Account! </h3>
+                    <a href="https://www.tiktok.com/en/"><img src="./images/social-media-logo/tik-tok-logo.png" alt="tiktok link"></a>
+                </div>
+                
+            </div>
+            <div class="spotlight-card">
+                <h1>Carlsbad</h1>
+                <p>Carlsbad is a coastal city located in the North County region of San Diego County, California. It has a population of approximately 115,000 people and is known for its beautiful beaches, resorts, and world-renowned golf courses. Some of the popular attractions in Carlsbad include LEGOLAND California, The Flower Fields at Carlsbad Ranch, and the Carlsbad Premium Outlets. The city is also home to several technology companies and is known for its thriving business community. </p>
+            </div>
+        </div>
+        
+        <div class="fresh-card">
+            <h1>Specialty Ordered Drinks</h1>
+            <h2>You have ordered <span id="orderedDrinks"></span> drinks so far! </h2>
+        </div>
+    </main>
+
+    <footer>
+        <img src="./images/site-logo/Bountiful-Foods-logos.webp" id="logo" alt="Bountiful Foods Logo">
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <div class="footer-div">
+            <div class="bussiness-info">
+                <p>+1 (530) 789 1234</p>
+                <p>1313 Disneyland Dr, Anaheim, CA 92802</p>
+                <a href="https://www.google.com/maps/place/Anaheim,+CA/@33.8339432,-118.1325728,11z/data=!3m1!4b1!4m15!1m8!3m7!1s0x80c325a785c9a649:0x7223c333f40c68d8!2sSouthern+California,+CA!3b1!8m2!3d34.9592083!4d-116.419389!16zL20vMGd4MWw!3m5!1s0x80dcd6f98055e867:0x1ab89ab9a2bb160!8m2!3d33.8365932!4d-117.9143012!16zL20vMGs5cDQ"><img id="location-icon" src="./images/location-logo.png" alt="location icon"></a>
+            </div>
+        </div>
+        
+    </footer>
 </body>
 </html>
