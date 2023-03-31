@@ -9,7 +9,7 @@ let forecast3 = document.querySelector("#forecast3");
 // API Call
 const url =
   "https://api.openweathermap.org/data/2.5/weather?lat=33.1581&lon=-117.3506&appid=adc52b2f761bf1e18153385164fece2a&units=imperial";
-const forecastUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=33.1581&&lon=-117.3506&appid=adc52b2f761bf1e18153385164fece2a&units=imperial`;
+const forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=33.1581&&lon=-117.3506&appid=adc52b2f761bf1e18153385164fece2a&units=imperial`;
             
 async function weatherApiCall() {
     try {
